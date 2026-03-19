@@ -6,7 +6,7 @@ import com.google.gson.Gson;
 public class Main {
     public static void main(String[] args) throws Exception {
         Gson gson = new Gson();
-        Map config = gson.fromJson(new FileReader("config.json"), Map.class);
+        Map config = gson.fromJson(new FileReader("./config.json"), Map.class);
 
         String rssUrl = (String) config.get("rss_url");
         String webhook = (String) config.get("discord_webhook");
