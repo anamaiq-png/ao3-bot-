@@ -14,7 +14,7 @@ public class Storage {
 
     private void load() {
         try {
-            Reader reader = new FileReader(file);
+            Reader reader = new FileReader("config.json);
             seen = gson.fromJson(reader, Set.class);
             if (seen == null) seen = new HashSet<>();
         } catch (Exception e) {
