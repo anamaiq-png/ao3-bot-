@@ -23,4 +23,4 @@ jobs:
         run: mvn clean install
 
       - name: Rodar bot
-        run: java -cp target/ao3-discord-1.0.jar Main
+        run: java -cp target/classes Main
